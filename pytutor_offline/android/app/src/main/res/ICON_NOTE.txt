@@ -1,0 +1,1 @@
+App icon files would normally be placed in mipmap folders. For a production app, use Android Studio's Image Asset Studio to generate all required icon sizes.
