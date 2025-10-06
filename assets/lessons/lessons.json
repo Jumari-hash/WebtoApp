@@ -1,0 +1,231 @@
+[
+  {
+    "id": 1,
+    "title": "Introduction to Python",
+    "description": "Learn the basics of Python programming and setup your first program",
+    "category": "Beginner",
+    "duration": 10,
+    "content": [
+      {
+        "heading": "What is Python?",
+        "text": "Python is a high-level, interpreted programming language known for its simplicity and readability. It's widely used in web development, data science, AI, and automation."
+      },
+      {
+        "heading": "Your First Python Program",
+        "text": "Let's write the classic 'Hello, World!' program:",
+        "code": "print('Hello, World!')"
+      },
+      {
+        "heading": "Comments in Python",
+        "text": "Comments help document your code. Use # for single-line comments:",
+        "code": "# This is a comment\nprint('This will run')  # This comment is at the end of a line"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Variables and Data Types",
+    "description": "Understanding variables, numbers, strings, and basic data types",
+    "category": "Beginner",
+    "duration": 15,
+    "content": [
+      {
+        "heading": "Variables",
+        "text": "Variables store data values. Python has no command for declaring a variable; it's created when you assign a value:",
+        "code": "name = 'Alice'\nage = 25\nheight = 5.6\nis_student = True"
+      },
+      {
+        "heading": "Data Types",
+        "text": "Python has several built-in data types:\n• str (string): text data\n• int (integer): whole numbers\n• float: decimal numbers\n• bool (boolean): True or False",
+        "code": "text = 'Hello'  # str\nnumber = 42  # int\ndecimal = 3.14  # float\nis_valid = True  # bool\n\nprint(type(text))  # <class 'str'>"
+      },
+      {
+        "heading": "Type Conversion",
+        "text": "Convert between data types using int(), float(), and str():",
+        "code": "num_str = '100'\nnum = int(num_str)\nprint(num + 50)  # 150\n\npi = 3.14159\npi_str = str(pi)\nprint(pi_str)"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Operators",
+    "description": "Learn arithmetic, comparison, and logical operators",
+    "category": "Beginner",
+    "duration": 12,
+    "content": [
+      {
+        "heading": "Arithmetic Operators",
+        "text": "Perform mathematical operations:",
+        "code": "a = 10\nb = 3\n\nprint(a + b)  # Addition: 13\nprint(a - b)  # Subtraction: 7\nprint(a * b)  # Multiplication: 30\nprint(a / b)  # Division: 3.333...\nprint(a // b)  # Floor division: 3\nprint(a % b)  # Modulus: 1\nprint(a ** b)  # Exponentiation: 1000"
+      },
+      {
+        "heading": "Comparison Operators",
+        "text": "Compare values and return True or False:",
+        "code": "x = 5\ny = 10\n\nprint(x == y)  # False (equal to)\nprint(x != y)  # True (not equal)\nprint(x < y)   # True (less than)\nprint(x > y)   # False (greater than)\nprint(x <= 5)  # True (less than or equal)\nprint(y >= 10) # True (greater than or equal)"
+      },
+      {
+        "heading": "Logical Operators",
+        "text": "Combine conditional statements:",
+        "code": "age = 25\nhas_license = True\n\ncan_drive = age >= 18 and has_license\nprint(can_drive)  # True\n\nis_teenager = age >= 13 and age <= 19\nprint(is_teenager)  # False\n\nis_minor = not (age >= 18)\nprint(is_minor)  # False"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Strings and String Methods",
+    "description": "Working with text data and string manipulation",
+    "category": "Beginner",
+    "duration": 18,
+    "content": [
+      {
+        "heading": "Creating Strings",
+        "text": "Strings can be created with single or double quotes:",
+        "code": "single = 'Hello'\ndouble = \"World\"\nmultiline = '''This is\na multiline\nstring'''\n\nprint(single + ' ' + double)  # Concatenation"
+      },
+      {
+        "heading": "String Methods",
+        "text": "Common string methods:",
+        "code": "text = 'Python Programming'\n\nprint(text.upper())  # PYTHON PROGRAMMING\nprint(text.lower())  # python programming\nprint(text.replace('Python', 'Java'))  # Java Programming\nprint(text.split())  # ['Python', 'Programming']\nprint(len(text))  # 18\nprint(text.startswith('Python'))  # True"
+      },
+      {
+        "heading": "String Formatting",
+        "text": "Format strings using f-strings (Python 3.6+):",
+        "code": "name = 'Alice'\nage = 25\nheight = 5.6\n\nmessage = f'{name} is {age} years old and {height} feet tall'\nprint(message)\n\n# Output: Alice is 25 years old and 5.6 feet tall"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Lists",
+    "description": "Learn to work with Python lists - ordered and mutable collections",
+    "category": "Beginner",
+    "duration": 20,
+    "content": [
+      {
+        "heading": "Creating Lists",
+        "text": "Lists store multiple items in a single variable:",
+        "code": "fruits = ['apple', 'banana', 'cherry']\nnumbers = [1, 2, 3, 4, 5]\nmixed = ['hello', 42, 3.14, True]\n\nprint(fruits[0])  # Access first item: apple\nprint(numbers[-1])  # Access last item: 5"
+      },
+      {
+        "heading": "List Methods",
+        "text": "Common operations on lists:",
+        "code": "fruits = ['apple', 'banana']\n\nfruits.append('cherry')  # Add item\nfruits.insert(1, 'orange')  # Insert at index\nfruits.remove('banana')  # Remove by value\npopped = fruits.pop()  # Remove and return last item\n\nprint(fruits)\nprint(len(fruits))  # Get length"
+      },
+      {
+        "heading": "List Slicing",
+        "text": "Extract portions of a list:",
+        "code": "numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n\nprint(numbers[2:5])  # [2, 3, 4]\nprint(numbers[:3])   # [0, 1, 2]\nprint(numbers[7:])   # [7, 8, 9]\nprint(numbers[::2])  # [0, 2, 4, 6, 8] (every 2nd item)\nprint(numbers[::-1]) # Reverse the list"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "If Statements and Conditionals",
+    "description": "Make decisions in your code with if, elif, and else",
+    "category": "Beginner",
+    "duration": 15,
+    "content": [
+      {
+        "heading": "If Statement",
+        "text": "Execute code based on a condition:",
+        "code": "age = 18\n\nif age >= 18:\n    print('You are an adult')\n    print('You can vote')"
+      },
+      {
+        "heading": "If-Else Statement",
+        "text": "Provide an alternative when condition is false:",
+        "code": "temperature = 25\n\nif temperature > 30:\n    print('It is hot outside')\nelse:\n    print('It is pleasant outside')"
+      },
+      {
+        "heading": "If-Elif-Else",
+        "text": "Check multiple conditions:",
+        "code": "score = 85\n\nif score >= 90:\n    grade = 'A'\nelif score >= 80:\n    grade = 'B'\nelif score >= 70:\n    grade = 'C'\nelif score >= 60:\n    grade = 'D'\nelse:\n    grade = 'F'\n\nprint(f'Your grade is {grade}')"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "For Loops",
+    "description": "Iterate over sequences with for loops",
+    "category": "Beginner",
+    "duration": 18,
+    "content": [
+      {
+        "heading": "Basic For Loop",
+        "text": "Loop through a sequence (list, string, range):",
+        "code": "fruits = ['apple', 'banana', 'cherry']\n\nfor fruit in fruits:\n    print(fruit)"
+      },
+      {
+        "heading": "Range Function",
+        "text": "Generate sequences of numbers:",
+        "code": "for i in range(5):\n    print(i)  # 0, 1, 2, 3, 4\n\nfor i in range(1, 6):\n    print(i)  # 1, 2, 3, 4, 5\n\nfor i in range(0, 10, 2):\n    print(i)  # 0, 2, 4, 6, 8"
+      },
+      {
+        "heading": "Enumerate",
+        "text": "Get both index and value while looping:",
+        "code": "fruits = ['apple', 'banana', 'cherry']\n\nfor index, fruit in enumerate(fruits):\n    print(f'{index}: {fruit}')\n\n# Output:\n# 0: apple\n# 1: banana\n# 2: cherry"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "While Loops",
+    "description": "Execute code repeatedly while a condition is true",
+    "category": "Beginner",
+    "duration": 15,
+    "content": [
+      {
+        "heading": "Basic While Loop",
+        "text": "Loop while a condition is True:",
+        "code": "count = 0\n\nwhile count < 5:\n    print(count)\n    count += 1"
+      },
+      {
+        "heading": "Break and Continue",
+        "text": "Control loop execution:",
+        "code": "# Break: exit the loop\nwhile True:\n    response = input('Continue? (y/n): ')\n    if response == 'n':\n        break\n    print('Continuing...')\n\n# Continue: skip to next iteration\nfor i in range(10):\n    if i % 2 == 0:\n        continue  # Skip even numbers\n    print(i)  # Only prints odd numbers"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Functions",
+    "description": "Create reusable blocks of code with functions",
+    "category": "Intermediate",
+    "duration": 25,
+    "content": [
+      {
+        "heading": "Defining Functions",
+        "text": "Use def to create a function:",
+        "code": "def greet():\n    print('Hello!')\n\ngreet()  # Call the function"
+      },
+      {
+        "heading": "Function Parameters",
+        "text": "Pass data to functions:",
+        "code": "def greet(name):\n    print(f'Hello, {name}!')\n\ngreet('Alice')\ngreet('Bob')\n\ndef add(a, b):\n    return a + b\n\nresult = add(5, 3)\nprint(result)  # 8"
+      },
+      {
+        "heading": "Default Parameters",
+        "text": "Provide default values for parameters:",
+        "code": "def greet(name, greeting='Hello'):\n    print(f'{greeting}, {name}!')\n\ngreet('Alice')  # Hello, Alice!\ngreet('Bob', 'Hi')  # Hi, Bob!\n\ndef power(base, exponent=2):\n    return base ** exponent\n\nprint(power(5))  # 25\nprint(power(5, 3))  # 125"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Dictionaries",
+    "description": "Store key-value pairs in Python dictionaries",
+    "category": "Intermediate",
+    "duration": 20,
+    "content": [
+      {
+        "heading": "Creating Dictionaries",
+        "text": "Dictionaries store key-value pairs:",
+        "code": "person = {\n    'name': 'Alice',\n    'age': 25,\n    'city': 'New York'\n}\n\nprint(person['name'])  # Alice\nprint(person.get('age'))  # 25"
+      },
+      {
+        "heading": "Dictionary Methods",
+        "text": "Common dictionary operations:",
+        "code": "person = {'name': 'Alice', 'age': 25}\n\nperson['email'] = 'alice@example.com'  # Add\nperson['age'] = 26  # Update\n\nprint(person.keys())  # dict_keys(['name', 'age', 'email'])\nprint(person.values())  # dict_values(['Alice', 26, 'alice@example.com'])\n\nfor key, value in person.items():\n    print(f'{key}: {value}')"
+      }
+    ]
+  }
+]
